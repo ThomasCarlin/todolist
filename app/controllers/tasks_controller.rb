@@ -11,7 +11,7 @@ class TasksController < ApplicationController
 		@task = Task.find(params[:id])
 		@task.destroy
 		@tasks = Task.all
-		@tasks = Task.order(:completed,urgency: :desc)
+		@tasks = Task.order(completed: :desc,urgency: :desc)
 	end
 	def edit
 		@task = Task.find(params[:id])
