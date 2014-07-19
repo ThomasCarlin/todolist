@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
 	def home
-		@tasks = Task.all
+		@tasks = Task.order(:completed,urgency: :desc)
 	end
 end

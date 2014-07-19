@@ -5,6 +5,8 @@
 	.modal-body
 		= f.input :title
 		= f.input :note
+		= f.input :room
+		= f.select :urgency, [['Urgent','urgent'],['Medium','medium'],['Low','low']]
 		= f.input :completed, as: :string, input_html: {class: 'datepicker', value: task.completed.present? ? localize(task.completed, format: '%dd/%mm/%Y') : nil}
 	.modal-footer
 		= f.submit 'Save', class: 'btn btn-primary'
