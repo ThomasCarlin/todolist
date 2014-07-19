@@ -44,4 +44,5 @@ gem 'haml'
 gem 'bootstrap-sass', '~>2.3.2.0'
 gem 'simple_form'
 gem 'bootstrap-datepicker-rails'
+gem 'rails_12factor'
 ruby "2.1.2"
