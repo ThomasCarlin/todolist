@@ -12,6 +12,7 @@
 				%h1
 					Student Tasks
 				= link_to 'New task', new_task_path, class: 'btn btn-primary', remote: true
+				=  link_to 'Refresh', root_path,class: 'btn btn-primary'
 				%p
 					Created by Thomas Carlin
 		= yield

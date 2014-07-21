@@ -11,6 +11,7 @@
 				%th Title
 				%th Urgency
 				%th Room
+				%th Time
 				%th Created at
 				%th Completed
 				%th Actions
@@ -23,6 +24,8 @@
 						=task.urgency
 					%td
 						=task.room
+					%td
+						=task.time
 					%td.text-info= task.created_at.try(:strftime, "%m-%d-%Y %r")
 					%td.text-success= task.completed.try(:strftime, "%m-%d-%Y")
 					%td 
